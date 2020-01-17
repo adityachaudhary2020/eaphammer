@@ -33,12 +33,12 @@ class Interface(object):
 
     def nm_off(self):
         print('[*] Reticulating radio frequency splines...')
-        os.system('nmcli device set %s managed no' % self.interface)
+        os.system('nmcli dev set %s managed no' % self.interface)
         utils.sleep_bar(1, '[*] Using nmcli to tell NetworkManager not to manage %s...' % self.interface)
         print('[*] Success: %s no longer controlled by NetworkManager.' % self.interface)
 
     def nm_on(self):
-        os.system('nmcli device set %s managed yes' % self.interface)
+        os.system('nmcli dev set %s managed yes' % self.interface)
         utils.sleep_bar(1, '[*] Using nmcli to give NetworkManager control of %s...' % self.interface)
         print('[*] Success: %s is now managed by NetworkManager.' % self.interface)
 
