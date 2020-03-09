@@ -1,0 +1,12 @@
+{
+  "summary": {
+    "title": "test model",
+    "owner": "Adi",
+    "description": "sample desc"
+  },
+  "detail": {
+    "contributors": [],
+    "diagrams": [],
+    "reviewer": "Adi"
+  }
+}
